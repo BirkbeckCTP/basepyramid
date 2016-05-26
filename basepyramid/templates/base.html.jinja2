@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+
+</head>
+<body>
+
+{%raw%}
+
+    <div ng-controller="myController1">
+        First Name : {{ employee1.firstName}}<br>
+        Last Name : {{ employee1.lastName}}<br>
+        Gender : {{ employee.gender}}<br><br>
+    </div>
+
+    <div ng-controller="myController2">
+        First Name : {{ employee2.firstName}} <br>
+        Last Name : {{ employee2.lastName}} <br>
+        Gender : {{ employee2.gender}} <br>
+    </div>
+
+{% endraw %}
+
+    {% for url in app_js_urls %}
+        <script src="{{ url }}"></script>
+    {% endfor %}
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+app_js:
+    filters: browserify
+    output: static/scripts/bundle.js
+    contents:
+        - basepyramid:static/scripts/app.js
+    depends:
+        - basepyramid:static/scripts/controller1.js
+        - basepyramid:static/scripts/controller2.js
