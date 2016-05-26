@@ -1,1 +1,0 @@
-basepyramid README
